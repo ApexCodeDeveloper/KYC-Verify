@@ -6,7 +6,7 @@ import {
   ReviewDecision,
 } from '../types';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://kyc-verifier-backend.onrender.com/';
+const API_URL = import.meta.env.VITE_API_URL || 'https://kyc-verifier-backend.onrender.com';
 
 async function handleResponse<T>(res: Response): Promise<T> {
   if (!res.ok) {
